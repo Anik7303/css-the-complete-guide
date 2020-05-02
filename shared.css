@@ -2,15 +2,10 @@
     box-sizing: border-box;
 }
 
-html {
-    overflow: hidden;
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
     box-sizing: border-box; /* content-box -> width & height is set on the content; border-box -> width & height is set on the border of the content */
-    overflow: hidden;
 }
 
 .main-header {
