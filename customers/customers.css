@@ -4,7 +4,7 @@
 }
 
 .testimonial__list {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -17,6 +17,20 @@
     padding: 14px;
     display: inline-block;
     vertical-align: middle;
+    width: 45%;
+    display: inline-block;
+}
+
+.testimonial__image-container {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial__image {
+    width: 100%;
+    display: block;
 }
 
 #customer-2.testimonial {
