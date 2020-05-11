@@ -8,6 +8,8 @@
     /* background-origin: border-box; *//* padding-box | border-box | content-box */
     /* background-clip: border-box; *//* padding-box | border-box | content-box */
     /* background-attachment: local; *//* local | scroll | fixed */
+    background-image: linear-gradient(to left bottom, red 40%, green 60%, blue 90%); /* to bottom | to left top | 30deg | 180deg ; red, blue, green | red, transparent | red, rgba(0, 0, 0, 0.5) | red 20%, blue 50%, yellow 90% */
+    /* background-image: radial-gradient(); */
     width: 100%;
     height: 528px;
     padding: 10px;
