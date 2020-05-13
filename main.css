@@ -9,7 +9,7 @@
     /* background-clip: border-box; *//* padding-box | border-box | content-box */
     /* background-attachment: local; *//* local | scroll | fixed */
     background-image: linear-gradient(to left bottom, red 40%, green 60%, blue 90%); /* to bottom | to left top | 30deg | 180deg ; red, blue, green | red, transparent | red, rgba(0, 0, 0, 0.5) | red 20%, blue 50%, yellow 90% */
-    /* background-image: radial-gradient(); */
+    background-image: radial-gradient(ellipse closest-side at 30% 50%, yellow, purple, orange, cyan, yellowgreen, #57c449); /* circle | ellipse | circle at top left | ellipse at 20% 30% | circle 20px at top right | ellipse 20px 40px at left | ellipse farthest-(side / corner) | ellipse closest-(side / corner) ; red, yellow, #0edf1f */
     width: 100%;
     height: 528px;
     padding: 10px;
