@@ -1,11 +1,11 @@
-.testimonial {
-    font-size: 20px;
-    margin: 48px 0;
-}
-
 .testimonial__list {
     width: 90%;
     margin: auto;
+}
+
+.testimonial {
+    font-size: 20px;
+    margin: 48px 0;
 }
 
 .testimonial:first-of-type {
