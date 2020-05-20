@@ -1,28 +1,29 @@
 #product-overview {
-    /* background: url("images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box local; *//* image position/size repeat origin clip attachment */
+    /* background: url("images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box local; */ /* image position/size repeat origin clip attachment */
     /* background-image: url("images/freedom.jpg"); */
     /* background-color: #ff1b68; */
-    /*background-size: 100% auto; *//* cover | contain | 100% | 50% 50% | 100% auto | auto 100% */
-    /* background-position: left 10% bottom 50%; *//* center | left | left top | left 20% bottom 10% | 50% 50% | 0% 10% | 0% 100% */
-    /* background-repeat: no-repeat; *//* no-repeat | repeat-x | repeat-y */
-    /* background-origin: border-box; *//* padding-box | border-box | content-box */
-    /* background-clip: border-box; *//* padding-box | border-box | content-box */
-    /* background-attachment: local; *//* local | scroll | fixed */
-    /* background-image: linear-gradient(to left bottom, red 40%, green 60%, blue 90%); *//* to bottom | to left top | 30deg | 180deg ; red, blue, green | red, transparent | red, rgba(0, 0, 0, 0.5) | red 20%, blue 50%, yellow 90% */
+    /*background-size: 100% auto; */ /* cover | contain | 100% | 50% 50% | 100% auto | auto 100% */
+    /* background-position: left 10% bottom 50%; */ /* center | left | left top | left 20% bottom 10% | 50% 50% | 0% 10% | 0% 100% */
+    /* background-repeat: no-repeat; */ /* no-repeat | repeat-x | repeat-y */
+    /* background-origin: border-box; */ /* padding-box | border-box | content-box */
+    /* background-clip: border-box; */ /* padding-box | border-box | content-box */
+    /* background-attachment: local; */ /* local | scroll | fixed */
+    /* background-image: linear-gradient(to left bottom, red 40%, green 60%, blue 90%); */ /* to bottom | to left top | 30deg | 180deg ; red, blue, green | red, transparent | red, rgba(0, 0, 0, 0.5) | red 20%, blue 50%, yellow 90% */
     /* background-image: radial-gradient(ellipse closest-side at 30% 50%, yellow, purple, orange, cyan, yellowgreen, #57c449); /* circle | ellipse | circle at top left | ellipse at 20% 30% | circle 20px at top right | ellipse 20px 40px at left | ellipse farthest-(side / corner) | ellipse closest-(side / corner) ; red, yellow, #0edf1f */
     /* background: linear-gradient(to top left, yellowgreen 10%, transparent), radial-gradient(circle closest-corner at 20% 30%, rgb(240, 102, 102), transparent), url("images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box local, grey; */
-    background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent), url('images/freedom.jpg');
+    background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
+        url("images/freedom.jpg");
     background-color: #ff1b68;
     background-size: cover;
-    background-position: left 10% bottom 20%;
+    background-position: left 10% bottom 70%;
     background-repeat: no-repeat;
     background-origin: border-box;
     background-clip: border-box;
     background-attachment: local;
     width: 100%;
-    height: 528px;
-    padding: 10px;
-    margin-top: 43px;
+    height: 40vh;
+    padding: 0.6rem;
+    margin-top: 2.8rem;
     position: relative;
 }
 
@@ -33,11 +34,11 @@
 
 #product-overview h1 {
     color: white;
-    font-family: 'Anton', sans-serif;
+    font-family: "Anton", sans-serif;
     position: absolute;
     left: 0;
     bottom: 0;
-    margin: 20px;
+    margin: 1.3rem;
 }
 
 .plan__list {
@@ -49,8 +50,8 @@
 .plan {
     background: #d5ffdc;
     text-align: center;
-    padding: 16px;
-    margin: 8px;
+    padding: 1rem;
+    margin: 0.5rem;
     width: 30%;
     display: inline-block;
     vertical-align: middle;
@@ -68,17 +69,17 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
 .plan__feature {
-    margin: 8px 0;
+    margin: 0.5rem 0;
 }
 
 .plan__anotation {
     background: white;
     color: #19b84c;
-    padding: 8px;
+    padding: 0.5rem;
     border-radius: 8px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
@@ -99,13 +100,13 @@
 
 #key-features {
     background: #ff1b68;
-    margin-top: 80px;
-    padding: 16px;
+    margin-top: 5rem;
+    padding: 1rem;
 }
 
 #key-features .section-title {
     color: white;
-    margin: 32px;
+    margin: 2rem;
 }
 
 .key-feature__list {
@@ -128,12 +129,12 @@
     border: 2px solid #424242;
     border-radius: 50%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 1.2rem;
 }
 
 .key-feature__description {
     text-align: center;
     font-weight: bold;
     color: white;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
