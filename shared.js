@@ -12,12 +12,12 @@ for (var i = 0; i < choosePlanButtonList.length; i++) {
     });
 }
 
-var closeModal = function () {
+function closeModal() {
     if (modal) {
         modal.classList.remove("open");
     }
     backdrop.classList.remove("open");
-};
+}
 
 backdrop.addEventListener("click", function () {
     closeModal();
