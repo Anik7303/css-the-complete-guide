@@ -6,6 +6,8 @@ main {
     background: url("../images/plans-background.jpg") center/cover;
     filter: grayscale(40%);
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     z-index: -1;
@@ -83,7 +85,7 @@ main {
 }
 
 #premium {
-    background: rgba(14, 79, 31, 0.95);
+    background: rgba(13, 129, 44, 0.95);
 }
 
 #premium .package__title {
@@ -92,4 +94,21 @@ main {
 
 #premium .package__subtitle {
     color: #bbb;
+}
+
+@media (min-width: 40rem) {
+    main {
+        margin: 3rem auto;
+        max-width: 1500px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .package {
+        border-left: 5px solid #0e4f1f;
+    }
+
+    #free {
+        border-right: 5px solid #0e4f1f;
+    }
 }
