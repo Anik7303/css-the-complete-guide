@@ -56,7 +56,30 @@
                 </li>
             </ul>
         </nav>
-        <main></main>
+        <main class="signup-page">
+            <h1 class="signup-title">Awesome! Let's dive right in!</h1>
+            <form action="index.html" class="signup-form">
+                <label for="title">Title</label>
+                <select name="title" id="title">
+                    <option value="mr">Mr.</option>
+                    <option value="ms">Ms.</option>
+                </select>
+                <label for="first-name">First name</label>
+                <input type="text" name="first-name" id="first-name" />
+                <label for="last-name">Last name</label>
+                <input type="text" name="last-name" id="last-name" />
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" />
+                <input type="checkbox" name="agree-terms" id="agree-terms" />
+                <label for="agree-terms"
+                    >Agree to
+                    <a href="#">Terms &amp; Comditions</a>
+                </label>
+                <button type="submit" class="button">Sign Up</button>
+            </form>
+        </main>
         <footer class="main-footer">
             <nav class="footer-nav">
                 <ul class="main-footer__links">
