@@ -1,3 +1,7 @@
+main {
+    padding-top: 2.5rem;
+}
+
 .testimonial__list {
     width: 90%;
     margin: auto;
@@ -6,10 +10,6 @@
 .testimonial {
     font-size: 1.2rem;
     max-width: 1500px;
-}
-
-.testimonial:first-of-type {
-    margin-top: 6rem;
 }
 
 .testimonial__info {
