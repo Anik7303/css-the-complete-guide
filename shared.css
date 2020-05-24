@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
 * {
     box-sizing: border-box; /* content-box -> width & height is set on the content; border-box -> width & height is set on the border of the content */
 }
