@@ -59,22 +59,21 @@ main {
 @media (min-width: 40rem) {
     .testimonial {
         margin: 3rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
     }
     .testimonial__info {
         text-align: right;
         width: 40%;
-        display: inline-block;
-        vertical-align: middle;
     }
 
     .testimonial__image-container {
         width: 55%;
-        display: inline-block;
-        vertical-align: middle;
         box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.3);
     }
 
-    #customer-2.testimonial {
+    #customer-2 .testimonial {
         text-align: right;
     }
 
