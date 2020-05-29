@@ -59,6 +59,14 @@ main {
     margin: 0.2rem;
 }
 
+#customer-1:hover .testimonial__image-container,
+#customer-2:hover .testimonial__image-container {
+    /* animation: flip-customer 400ms ease-out; */
+    animation-name: flip-customer;
+    animation-duration: 400ms;
+    animation-timing-function: ease-out;
+}
+
 @media (min-width: 40rem) {
     .testimonial {
         margin: 3rem auto;
@@ -82,5 +90,17 @@ main {
 
     #customer-2 .testimonial__info {
         text-align: left;
+    }
+}
+
+@keyframes flip-customer {
+    0% {
+        transform: skew(20deg) rotateY(0);
+    }
+    50% {
+        transform: skew(20deg) rotateY(160deg);
+    }
+    100% {
+        transform: skew(20deg) rotateY(360deg);
     }
 }

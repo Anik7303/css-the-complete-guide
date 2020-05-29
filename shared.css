@@ -133,6 +133,17 @@ main {
     border-bottom: 5px solid white;
 }
 
+.main-nav__item--cta {
+    /* animation: wiggle 400ms 2s 8 ease-out none; */
+    animation-name: wiggle;
+    animation-duration: 400ms;
+    animation-delay: 2s;
+    animation-iteration-count: 8;
+    animation-timing-function: linear;
+    animation-direction: none; /* alternate, alternate-reverse, reverse, none */
+    animation-fill-mode: none; /* forwards, backwards, none */
+}
+
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
     color: white;
@@ -260,4 +271,18 @@ main {
 
 .open {
     display: block !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transform: rotateZ(-5deg);
+    }
+    100% {
+        transform: rotateZ(5deg);
+    }
 }
