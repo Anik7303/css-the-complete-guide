@@ -1,21 +1,30 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 #product-overview {
-    /* background: url("images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box local; */ /* image position/size repeat origin clip attachment */
-    /* background-image: url("images/freedom.jpg"); */
-    /* background-color: #ff1b68; */
-    /*background-size: 100% auto; */ /* cover | contain | 100% | 50% 50% | 100% auto | auto 100% */
-    /* background-position: left 10% bottom 50%; */ /* center | left | left top | left 20% bottom 10% | 50% 50% | 0% 10% | 0% 100% */
-    /* background-repeat: no-repeat; */ /* no-repeat | repeat-x | repeat-y */
-    /* background-origin: border-box; */ /* padding-box | border-box | content-box */
-    /* background-clip: border-box; */ /* padding-box | border-box | content-box */
-    /* background-attachment: local; */ /* local | scroll | fixed */
-    /* background-image: linear-gradient(to left bottom, red 40%, green 60%, blue 90%); */ /* to bottom | to left top | 30deg | 180deg ; red, blue, green | red, transparent | red, rgba(0, 0, 0, 0.5) | red 20%, blue 50%, yellow 90% */
-    /* background-image: radial-gradient(ellipse closest-side at 30% 50%, yellow, purple, orange, cyan, yellowgreen, #57c449); /* circle | ellipse | circle at top left | ellipse at 20% 30% | circle 20px at top right | ellipse 20px 40px at left | ellipse farthest-(side / corner) | ellipse closest-(side / corner) ; red, yellow, #0edf1f */
-    /* background: linear-gradient(to top left, yellowgreen 10%, transparent), radial-gradient(circle closest-corner at 20% 30%, rgb(240, 102, 102), transparent), url("images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box local, grey; */
+    background: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(10%, rgba(80, 68, 18, 0.6)),
+            to(transparent)
+        ),
+        url("../images/freedom.jpg");
+    background: -o-linear-gradient(
+            bottom,
+            rgba(80, 68, 18, 0.6) 10%,
+            transparent
+        ),
+        url("../images/freedom.jpg");
     background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
-        url("images/freedom.jpg");
+        url("../images/freedom.jpg");
     background-color: #ff1b68;
     background-size: cover;
-    background-position: center; /* left 10% bottom 70% */
+    background-position: center;
     background-repeat: no-repeat;
     background-origin: border-box;
     background-clip: border-box;
@@ -40,7 +49,6 @@
     #product-overview {
         height: 40vh;
         background-position: left 50% top 25%;
-        /* margin-top: 2.5rem; */
     }
 
     #product-overview h1 {
@@ -59,8 +67,6 @@
     padding: 1rem;
     margin: 0.5rem auto;
     width: 90%;
-    /* display: inline-block; */
-    /* vertical-align: middle; */
 }
 
 .plan__title {
@@ -87,6 +93,7 @@
     color: #19b84c;
     padding: 0.5rem;
     border-radius: 8px;
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -106,8 +113,14 @@
 @media (min-width: 40rem) {
     .plan__list {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
@@ -116,12 +129,20 @@
         height: 28rem;
         min-width: 12.8rem;
         max-width: 22rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
 
     .plan--highlighted {
+        -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
         box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
         height: 30rem;
         z-index: 1;
@@ -144,9 +165,18 @@
     padding: 0;
     margin: 0;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -173,7 +203,12 @@
 
 @media (min-width: 40rem) {
     .key-feature__list {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -184,7 +219,6 @@
 }
 
 .modal {
-    /* display: none; */
     position: fixed;
     z-index: 200;
     top: 20%;
@@ -193,10 +227,18 @@
     background: white;
     border: 1px solid #ccc;
     padding: 1rem;
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     opacity: 0;
+    -webkit-transform: translateY(-3rem);
+    -ms-transform: translateY(-3rem);
     transform: translateY(-3rem);
+    -webkit-transition: opacity 200ms ease-out, -webkit-transform 500ms ease-out;
+    transition: opacity 200ms ease-out, -webkit-transform 500ms ease-out;
+    -o-transition: opacity 200ms ease-out, transform 500ms ease-out;
     transition: opacity 200ms ease-out, transform 500ms ease-out;
+    transition: opacity 200ms ease-out, transform 500ms ease-out,
+        -webkit-transform 500ms ease-out;
 }
 
 .modal__title {
